@@ -7,3 +7,5 @@ I developed this port to facilitate testing of device drivers and general softwa
 This port has only been tested on the RockPro64 4GB board, however it likely will run on any ARM based system that can boot the Gentoo Arm64 installation CD image.
 
 This repository will be populated over the next few weeks - there are several cleanup activities that I would like to complete before publishing.
+
+Stage3 (preliminary) tarball is now available.
