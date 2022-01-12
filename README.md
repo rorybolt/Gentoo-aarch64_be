@@ -9,10 +9,11 @@ This port has only been tested on the RockPro64 4GB board, however it likely wil
 This repository will be populated over the next few weeks - there are several cleanup activities that I would like to complete before publishing.
 
 Stage3 tarball is now available.
+Bootable image is now available
 
 Upcoming releases (in probable order)
-  1) Bootable install images (coming soon!)
-  2) Kernel patches (quite minor)
+  1) Kernel patches (quite minor)
+  2) Stand alone GRUB EFI modules for mmcblk1 and sda
   3) GRUB patches (quite a lot)
 
 Since the GRUB changes are substantial and non-trivial, I will also release GRUB binaries preconfigured to boot from SDHC (mmcblk1) and sda. These will have two boot options, one for normal boot and one for an optional recovery boot. They will reference a (vmlinuz initrd.img) and (vmlinuz.recover initrd.recover.img) respectively. You will be able to build and install whatever kernel and initramfs you like as long as you rename it or link them to the generic names (e.g. vmlinuz and initrd.img) in /boot. Likewise you can also put in a recovery pair into /boot as long as they are named (vmlinuz.recover, initrd.recover.img).
