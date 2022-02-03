@@ -8,9 +8,11 @@ This port has only been tested on the RockPro64 4GB board, however it likely wil
 
 This repository will be populated over the next few weeks - there are several cleanup activities that I would like to complete before publishing.
 
-Stage3 tarball is now available.
-Bootable image is now available.
-Kernel runtime patches are now available.
+<b>*Stage3 tarball is now available.
+  
+*Bootable image is now available.
+  
+*Kernel runtime patches are now available.</b>
 
 Upcoming releases (in probable order)
 
