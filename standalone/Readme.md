@@ -1,4 +1,4 @@
-These are standalone EFI boot images that support booting either big endian or little endian kernels.
+These are standalone EFI boot images that support booting either big endian or little endian kernels. The folders contain versions corresponding to the device name of the boot device (e.g. whether you are installing/booting on /dev/mmcblk1 or /dev/sda).
 
 They assume that the root partition is the third partition of the device, and the EFI boot image <b>MUST</b> be copied to the EFI/BOOT folder of the first partition, which <b>MUST</b> be formated as a vfat filesystem.
 
