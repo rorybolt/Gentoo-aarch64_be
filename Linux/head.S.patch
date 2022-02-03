@@ -1,0 +1,27 @@
+--- arch/arm64/kernel/head.S.orig       2022-02-02 16:49:59.907198344 -0800
++++ arch/arm64/kernel/head.S    2022-02-02 16:51:08.593301055 -0800
+@@ -89,6 +89,24 @@
+         *  x24        __primary_switch() .. relocate_kernel()  current RELR displacement
+         */
+ SYM_CODE_START(primary_entry)
++#ifdef CONFIG_CPU_BIG_ENDIAN
++        mrs     x21, CurrentEL
++        lsr     x21, x21, #2
++        cmp     x21, #0x2
++        b.lo    1f
++
++        mrs     x21, sctlr_el2
++        orr     x21, x21, #SCTLR_ELx_EE /* set: Big Endian */
++        msr     sctlr_el2, x21
++        isb
++
++1:
++        mrs     x21, sctlr_el1
++        orr     x21, x21, #(SCTLR_ELx_EE | SCTLR_EL1_E0E)       /* set: Big Endian */
++        msr     sctlr_el1, x21
++        isb
++
++#endif
+        bl      preserve_boot_args
+        bl      init_kernel_el                  // w0=cpu_boot_mode
+        adrp    x23, __PHYS_OFFSET
