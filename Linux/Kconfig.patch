@@ -1,0 +1,11 @@
+--- arch/arm64/Kconfig.orig     2022-02-01 08:29:20.000000000 -0800
++++ arch/arm64/Kconfig  2022-02-02 16:49:28.994095541 -0800
+@@ -1997,7 +1997,7 @@
+
+ config EFI
+        bool "UEFI runtime support"
+-       depends on OF && !CPU_BIG_ENDIAN
++       depends on OF
+        depends on KERNEL_MODE_NEON
+        select ARCH_SUPPORTS_ACPI
+        select LIBFDT
