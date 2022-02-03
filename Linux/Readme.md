@@ -1,4 +1,4 @@
-These are the changes needed to the linux source code to build a big endian kernel. I anticipate that these can be adopted by the main line kernel since they are quite small/reasonable.
+These are the changes needed to the linux source code to build a big endian kernel that can be loaded by GRUB. I anticipate that these can be adopted by the main line kernel since they are quite small/reasonable. GRUB currently only supports loading linux as an EFI application on Arm, so it is necessary to have a EFI/PE/COFF header.
 
 For the most part the kernel is endian clean, however the Rockchip DRM video driver is not. I will get around to this as a very low priority. This means that for the time being, you <B>MUST</B> use a serial console on the RockPro64 so that you can configure sshd and user accounts to log in.
 
