@@ -12,7 +12,7 @@ This repository will be populated over the next few weeks - there are several cl
   
 *UPDATED Bootable image is now available.
   
-*Kernel runtime patches are now available.
+*Kernel build patches are now available.
 
 *Stand alone GRUB EFI modules for mmcblk1 and sda
 </b>
