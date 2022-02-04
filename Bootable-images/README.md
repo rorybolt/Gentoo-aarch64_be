@@ -1,6 +1,8 @@
-<H6> UPDATED to latest GRUB EFI ans kernel 5.16.5 </H6>
+# UPDATED to latest GRUB EFI and kernel 5.16.5
 
-<B>This image REQUIRES a serial console.</B>
+**This image REQUIRES a serial console.**
+
+**Due to big endian errors in RK3399 driver, some systems will not boot with monitors attached.**
 
 Due to Github size limits, I have posted a link to the bootable image on my Google Drive folder
 
