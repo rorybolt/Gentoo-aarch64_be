@@ -10,7 +10,7 @@ This repository will be populated over the next few weeks - there are several cl
 
 <b>*Stage3 tarball is now available.
   
-*Bootable image is now available.
+*UPDATED Bootable image is now available.
   
 *Kernel runtime patches are now available.
 
@@ -19,8 +19,8 @@ This repository will be populated over the next few weeks - there are several cl
 
 Upcoming releases (in probable order)
 
-  1) Updated bootable images (all known grub issues now fixed!)
-  3) GRUB patches (quite a lot)
+ 
+  1) GRUB patches (quite a lot)
   4) Big endian video support for RK3399
 
 Since the GRUB changes are substantial and non-trivial, I have released GRUB EFI binaries preconfigured to boot from SDHC (mmcblk1) and sda. You will find these pre-compiled EFI images in the "standalone" directory. These will have two boot options, one for normal boot and one for an optional recovery boot. They will reference a (vmlinuz initrd.img) and (vmlinuz.recover initrd.recover.img) respectively. You will be able to build and install whatever kernel and initramfs you like as long as you rename it or link them to the generic names (e.g. vmlinuz and initrd.img) in /boot. Likewise you can also put in a recovery pair into /boot as long as they are named (vmlinuz.recover, initrd.recover.img).
