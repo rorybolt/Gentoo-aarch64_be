@@ -2,7 +2,7 @@
 
 **This image REQUIRES a serial console.**
 
-**Due to big endian errors in RK3399 driver, some systems will not boot with monitors attached.**
+**<s>Due to big endian errors in RK3399 driver, some systems will not boot with monitors attached.</s> FIXED**
 
 Due to Github size limits, I have posted a link to the bootable image on my Google Drive folder
 
